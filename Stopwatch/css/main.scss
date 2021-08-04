@@ -1,0 +1,93 @@
+// @import "_resets"
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+$heading-font: Quicksand;
+$font-color: rgb(43,43,43);
+
+body {
+    background-color: rgb(252, 182, 31);
+    font-family: $heading-font;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: $font-color;
+    text-align: center;
+    // margin-top: -5px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -50px;
+}
+
+@mixin digitsStyle ($color) {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    color: $color;
+}
+
+h3 {
+    font-size: 7rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -20px;
+    color: rgb(236, 58, 13);
+    text-shadow: 2px 1px 0.05rem $font-color;
+    
+    .ms {
+        @include digitsStyle(azure)
+        
+    }
+    .sec {
+        @include digitsStyle(rgb(76, 76, 145))
+    }
+    .minute {
+        @include digitsStyle(none)
+    }
+    .hour {
+        @include digitsStyle(rgb(4, 117, 79))
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: -50px;
+
+    li {
+        list-style: none;
+        display: block;
+        padding: 0 20px;
+
+        .mybutton {
+            width: 150px;
+            height: 50px;
+            background-color: $font-color;
+            color: azure;
+            font-family: $heading-font;
+            border: none;
+            box-shadow: 2px 3px 0.8rem rgb(207, 207, 207);
+
+            &:hover {
+                transform: translateY(-2px);
+                color: coral;
+            }
+            &:focus {
+                background-color: coral;
+                color: azure;
+            }
+        }
+    }
+
+}

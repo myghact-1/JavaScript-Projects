@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+body {
+  background-color: #fcb61f;
+  font-family: Quicksand;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -50px;
+}
+
+h3 {
+  font-size: 7rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -20px;
+  color: #ec3a0d;
+  text-shadow: 2px 1px 0.05rem #2b2b2b;
+}
+h3 .ms {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  color: azure;
+}
+h3 .sec {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  color: #4c4c91;
+}
+h3 .minute {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  color: none;
+}
+h3 .hour {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  color: #04754f;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+ul li {
+  list-style: none;
+  display: block;
+  padding: 0 20px;
+}
+ul li .mybutton {
+  width: 150px;
+  height: 50px;
+  background-color: #2b2b2b;
+  color: azure;
+  font-family: Quicksand;
+  border: none;
+  box-shadow: 2px 3px 0.8rem #cfcfcf;
+}
+ul li .mybutton:hover {
+  transform: translateY(-2px);
+  color: coral;
+}
+ul li .mybutton:focus {
+  background-color: coral;
+  color: azure;
+}/*# sourceMappingURL=main.css.map */
